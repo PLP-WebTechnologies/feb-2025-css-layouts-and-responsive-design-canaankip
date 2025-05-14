@@ -1,0 +1,136 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #20232a;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+.site-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #61dafb;
+  color: #20232a;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* About Section */
+.about-section {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 2rem;
+  background-color: #e0f7fa;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.skill-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h3 {
+  color: #00796b;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #20232a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .skill-card {
+    width: 100%;
+  }
+}
